@@ -30,7 +30,7 @@ export default function AboutPage() {
             Our Story
           </h1>
           <p className="text-xl text-white/90 max-w-3xl">
-            Connecting Africa's stories with the world, one narrative at a time
+            Connecting Africa&apos;s stories with the world, one narrative at a time
           </p>
         </div>
       </section>
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 We envision a world where African stories, in all their diversity and richness, are recognized and celebrated globally. A world where African creatives have the platform, resources, and representation they need to share their unique perspectives.
               </p>
               <p>
-                Through our work in film production, publishing, talent management, and educational workshops, we're committed to nurturing the next generation of African storytellers and creating sustainable pathways for their success.
+                Through our work in film production, publishing, talent management, and educational workshops, we&apos;re committed to nurturing the next generation of African storytellers and creating sustainable pathways for their success.
               </p>
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
@@ -382,10 +382,10 @@ export default function AboutPage() {
       <section className="py-16 bg-primary text-white">
         <div className="container text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">
-            Join Us in Telling Africa's Stories
+            Join Us in Telling Africa&apos;s Stories
           </h2>
           <p className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
-            Whether you're a creative looking for representation, a partner interested in collaboration, or simply want to learn more about what we do.
+            Whether you&apos;re a creative looking for representation, a partner interested in collaboration, or simply want to learn more about what we do.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <Link 

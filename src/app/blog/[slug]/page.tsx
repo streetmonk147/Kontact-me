@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
-import { Calendar, User, Tag, ArrowLeft, Share2, ChevronRight } from "lucide-react";
+import { Calendar, User, Tag, ArrowLeft, Share2 } from "lucide-react";
 
 // Blog posts data (placeholders) - this would typically come from a database or API
 const blogPosts = [

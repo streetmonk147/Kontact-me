@@ -88,7 +88,7 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              We'd love to hear from you. Let's connect and explore how we can bring your African story to life.
+              We&apos;d love to hear from you. Let&apos;s connect and explore how we can bring your African story to life.
             </p>
           </motion.div>
         </div>
@@ -104,13 +104,13 @@ export default function ContactPage() {
                 Send Us a Message
               </h2>
               <p className="text-text-muted mb-8">
-                Whether you're interested in our services, want to become a client, or just have a question, we're here to help.
+                Whether you&apos;re interested in our services, want to become a client, or just have a question, we&apos;re here to help.
               </p>
 
               {formStatus === "success" && (
                 <div className="bg-green-50 border border-green-200 text-green-800 rounded-md p-4 mb-6 flex items-start">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <p>Thank you for your message! We'll get back to you soon.</p>
+                  <p>Thank you for your message! We&apos;ll get back to you soon.</p>
                 </div>
               )}
 
