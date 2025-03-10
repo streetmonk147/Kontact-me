@@ -1,27 +1,96 @@
+/* stylelint-disable */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* stylelint-enable */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Color Palette */
+    --color-primary: 211, 84, 0;        /* Deep Orange */
+    --color-primary-light: 230, 126, 34; /* Lighter Orange */
+    --color-primary-dark: 160, 64, 0;   /* Darker Orange */
+    
+    --color-secondary: 44, 62, 80;      /* Navy Blue */
+    --color-secondary-light: 52, 73, 94; /* Lighter Navy */
+    --color-secondary-dark: 26, 37, 48; /* Darker Navy */
+    
+    --color-accent-gold: 241, 196, 15;  /* Gold */
+    --color-accent-earth: 141, 110, 99; /* Earth Tone */
+    --color-accent-green: 39, 174, 96;  /* Forest Green */
+    
+    --color-text-dark: 30, 39, 46;      /* Dark Text */
+    --color-text-light: 245, 245, 245;  /* Light Text */
+    --color-text-muted: 149, 165, 166;  /* Muted Text */
+    
+    --color-background: 255, 255, 255;  /* Background White */
+    --color-background-alt: 249, 249, 249; /* Alternate Background */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* stylelint-disable */
+@layer components {
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white hover:bg-secondary-dark;
+  }
+  
+  .btn-outline {
+    @apply border border-primary text-primary hover:bg-primary hover:text-white;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-heading font-bold mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-text-muted mb-8 max-w-2xl;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-lg hover:-translate-y-1;
+  }
 }
+/* stylelint-enable */
 
+/* stylelint-disable */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent-gold;
+  }
+  
+  .bg-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D35400' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+  .animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+/* stylelint-enable */
