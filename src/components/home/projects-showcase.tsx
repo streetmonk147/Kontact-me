@@ -61,11 +61,11 @@ const projects = [
 ];
 
 export function ProjectsShowcase() {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
+    if (containerRef.current) {
+      containerRef.current.scrollBy({
         left: -300,
         behavior: "smooth",
       });
@@ -73,8 +73,8 @@ export function ProjectsShowcase() {
   };
 
   const scrollRight = () => {
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollBy({
+    if (containerRef.current) {
+      containerRef.current.scrollBy({
         left: 300,
         behavior: "smooth",
       });
@@ -143,7 +143,7 @@ export function ProjectsShowcase() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="overflow-x-auto hide-scrollbar"
-            ref={scrollContainerRef}
+            ref={containerRef}
           >
             <div className="flex gap-6 py-4 px-1 min-w-max">
               {projects.map((project) => (

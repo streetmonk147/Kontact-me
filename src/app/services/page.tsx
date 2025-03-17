@@ -156,7 +156,13 @@ export default function ServicesPage() {
               Our Services
             </h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              Comprehensive solutions to bring African stories to the global stage
+              We&apos;re committed to &quot;bringing African stories to life&quot; through our comprehensive range of services.
+            </p>
+            <p className="text-xl text-white/90 max-w-2xl">
+              Our &quot;talent management&quot; services help artists navigate the industry&apos;s challenges and opportunities.
+            </p>
+            <p className="text-xl text-white/90 max-w-2xl">
+              We&apos;re proud to offer &quot;educational workshops&quot; that empower the next generation of storytellers.
             </p>
           </motion.div>
         </div>

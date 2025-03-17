@@ -2,7 +2,6 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Film, BookOpen, Users, GraduationCap, ArrowRight } from "lucide-react";
 import { serviceImages } from "@/lib/placeholder-images";

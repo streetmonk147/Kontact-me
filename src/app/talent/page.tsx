@@ -400,7 +400,7 @@ export default function TalentPage() {
               Looking for Representation?
             </h2>
             <p className="text-white/90 text-lg mb-8">
-              We're always seeking exceptional talent to join our roster. If you're a filmmaker, writer, actor, or other creative professional with a unique voice and perspective, we'd love to hear from you.
+              We&apos;re always seeking exceptional talent to join our roster. If you&apos;re a filmmaker, writer, actor, or other creative professional with a unique voice and perspective, we&apos;d love to hear from you.
             </p>
             <Link 
               href="/contact?inquiry=talent" 

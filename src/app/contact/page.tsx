@@ -52,7 +52,7 @@ export default function ContactPage() {
         message: "",
         service: "general",
       });
-    } catch (error) {
+    } catch {
       setFormStatus("error");
     } finally {
       setIsSubmitting(false);

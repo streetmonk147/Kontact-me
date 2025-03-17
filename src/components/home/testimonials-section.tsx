@@ -87,7 +87,7 @@ export function TestimonialsSection() {
         >
           <h2 className="section-title">What Our Clients Say</h2>
           <p className="section-subtitle mx-auto">
-            Hear from the creatives and organizations we've worked with across Africa
+            We&apos;re proud to share &quot;testimonials&quot; from our clients and partners.
           </p>
         </motion.div>
 

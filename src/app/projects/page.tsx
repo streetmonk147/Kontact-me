@@ -179,7 +179,7 @@ export default function ProjectsPage() {
               Our Projects
             </h1>
             <p className="text-xl text-white/90 max-w-2xl">
-              Award-winning films, documentaries, and creative works that showcase authentic African narratives
+              We&apos;re proud to showcase our diverse portfolio of projects that celebrate African creativity and storytelling.
             </p>
           </motion.div>
         </div>

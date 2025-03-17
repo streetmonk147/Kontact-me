@@ -10,7 +10,6 @@ import {
   Clock, 
   User, 
   Award, 
-  Tag, 
   Play, 
   Share2, 
   ArrowLeft,
